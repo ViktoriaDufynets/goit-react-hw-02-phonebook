@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import css from './Form.module.css';
 import { Component } from 'react';
 
@@ -63,6 +64,13 @@ class Form extends Component {
     );
   }
 }
+
+Form.propTypes = { 
+   handleChange: PropTypes.func, 
+   handleSubmit: PropTypes.func,
+   reset: PropTypes.func, 
+ };
+
 
 export default Form;
   
